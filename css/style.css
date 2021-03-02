@@ -1,6 +1,22 @@
 body{
-    background-image: url("/img/hill.jpg");
+    background-image: url("../img/hill.jpg");
+    
 }
+
+
+/*.page-bg{
+    background-image: url("/img/hill.jpg");
+  filter        : blur(10px);
+    -moz-filter   : blur(10px);
+    -webkit-filter: blur(10px);
+    -o-filter     : blur(10px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}*/
 
 main{
     font-family: system-ui, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,7 +30,7 @@ main{
     float: left;
     width: 392px;
     height: 624px;
-    background-image: url("/img/hill.jpg");
+    background-image: url("../img/hill.jpg");
     background-repeat: no-repeat;
     background-size: 392px 584px;
     margin-top: 20px;
