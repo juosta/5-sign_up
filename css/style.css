@@ -30,6 +30,10 @@ h1{
     text-transform: capitalize;
 }
 
+.reset_password{
+    left: 40px;
+}
+
 .left>a{
     color: white;
     position: relative;
