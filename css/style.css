@@ -1,5 +1,6 @@
 body{
-    background-image: url("../img/hill.jpg");
+    /*background-image: url("../img/hill.jpg");*/
+    background-image: radial-gradient(#0074BF, #9341AC);
     
 }
 
