@@ -1,3 +1,10 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
 body{
     /*background-image: url("../img/hill.jpg");*/
     background-image: radial-gradient(#0074BF, #9341AC);
@@ -5,16 +12,15 @@ body{
 
 .container{
     font-family: system-ui, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position:relative;
+    display: inline-block;
     width: 965px;
-    top: 143px;
-    left: calc((100% - 965px) / 2);
+    margin-top: 143px;
+    margin-left: calc((100% - 965px) / 2);
 }
 
 .left{
     float: left;
     width: 392px;
-    height: 624px;
     background-image: url("../img/hill.jpg");
     background-repeat: no-repeat;
     background-size: 392px 584px;
@@ -23,16 +29,17 @@ body{
 }
 
 h1{
+    display: inline-block;
+    width: 100%;
     font-size: 50px;
     font-weight: lighter;
-    position: relative;
-    top: 11px;
-    left: 86px;
     text-transform: capitalize;
+    padding: 41px 0 20px 91px;
 }
 
 .reset_password{
-    left: 40px;
+    text-align: center;
+    padding-left: 15px;
 }
 
 .left>a{
@@ -40,14 +47,13 @@ h1{
     position: relative;
     top: 380px;
     left: 92px;
-
 }
 
 .right{
     background-color:white;
-    float:right;
-    width:573px;
-    height: 624px;
+    float: left;
+    width: 573px;
+    padding: 60px;
     color: #B6B6B6;
 }
 
@@ -58,19 +64,81 @@ h1{
 .close_btn{
     position: relative;
     float:right;
-    top: 10px;
-    right: 10px;
+    top: -47px;
+    right: -37px;
     font-size: 40px;
     color: #B6B6B6;
     background-color: transparent;
     border: none;
 }
 
-form{
-    position: relative;
-    top:90px;
-    left: 80px;
+from{
+    display: inline-block;
+    width: 100%;
 }
+form > .form-row{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+form > .form-row:last-of-type{
+    margin-bottom: 0;
+}
+form > .form-row > label{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    
+}
+form > .form-row > input{
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+
+}
+form > .form-row > input{
+    display: inline-block;
+    width: 100%;
+}
+form > .form-row > button{
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0065D9;
+    padding: 10px 49px;
+    border-radius: 25px;
+    border: none;
+}
+form > .form-row > span{
+    float: left;
+    padding: 5px;
+    line-height: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+form > .form-row > a{
+    float: left;
+    padding: 5px;
+    font-size:16px;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#015cda;
+    text-transform: capitalize;
+}
+
+
+
 input::placeholder{
     font-size:16px;
 }
@@ -79,25 +147,15 @@ input::placeholder{
     background-color: transparent;
     border: none;
     border-bottom: solid 1px;
-    margin: 20px 0 49px 0;
     width: 70%;
 }
 
-.form_buttons{
-    font-size:16px;
-    background-color: #0065D9;
-    color: white;
-    font-weight: bold;
-    padding: 10px 49px;
-    border-radius: 25px;
-    border: none;
+.or{
+    margin-left: 24px;
+    margin-right: 3px;
 }
 
 .sign_in_page{
-    margin-left: 24px;
-}
-
-.sign_in_page>a{
     text-decoration: none;
     font-weight: bold;
     color: #0065D9;

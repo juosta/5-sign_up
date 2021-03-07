@@ -18,13 +18,19 @@
         
         <div class="right">
             <button class="close_btn" onclick="closeWin()">×</button>
-            <form action="#">
+            <form>
+                <div class="form-row">
                 <label class="form_labels" for="username">Username</label><br>
                 <input class="input" type="text" id="username" name="username" placeholder="Username"><br>
+                </div>
+                <div class="form-row">
                 <label class="form_labels" for="password">Password</label><br>
                 <input class="input" type="password" id="password" name="password" placeholder="●●●●●●"><br>
-                <input class="form_buttons" type="submit" value="Sign in">
-                <span class="sign_in_page"><a href="./forgot_password.html"> Forgot password</a></span>
+                </div>
+                <div class="form-row">
+                <button class="form_buttons" type="submit">Sign in</button>
+                <span class="or"> or </span> <a class="sign_in_page"  href="./forgot_password.html"> Forgot password</a>
+                </div>
             </form>
         </div>
     </main>
