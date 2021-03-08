@@ -13,7 +13,10 @@
     <main class="container">
         <div class="left">
             <h1 class="Sign_in_header">Sign Up</h1>
-            <a href="#">Privacy policy & terms of service</a>
+            <div class="links">
+            <a href="#">Privacy policy</a> <span>&</span>
+            <a href="#">terms of service</a>
+            </div>
         </div>
         
         <div class="right">
@@ -21,19 +24,19 @@
             <form>
                 <div class="form-row">
                     <label class="form_labels" for="username">Username</label><br>
-                    <input class="input" type="text" id="username" name="username" placeholder="Username"><br>
+                    <input class="input" type="text" id="username" name="username" placeholder="Username" required><br>
                 </div>
                 <div class="form-row">
                     <label class="form_labels" for="email">E-mail</label><br>
-                    <input class="input" type="email" id="email" name="email" placeholder="E-mail"><br>
+                    <input class="input" type="email" id="email" name="email" placeholder="E-mail" required><br>
                 </div>
                 <div class="form-row">
                 <label class="form_labels" for="password">Password</label><br>
-                <input class="input" type="password" id="password" name="password" placeholder="●●●●●●"><br>
+                <input class="input" type="password" id="password" name="password" placeholder="●●●●●●" required><br>
                 </div>
                 <div class="form-row">
                     <label class="form_labels" for="rep_password">Repeat password</label><br>
-                    <input class="input" type="password" id="rep_password" name="rep_password" placeholder="●●●●●●"><br>
+                    <input class="input" type="password" id="rep_password" name="rep_password" placeholder="●●●●●●" required><br>
                 </div>
                 <div class="form-row">
                 <button class="form_buttons" type="submit">Get started</button> 

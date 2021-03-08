@@ -5,54 +5,77 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
 }
+
 body{
     /*background-image: url("../img/hill.jpg");*/
     background-image: radial-gradient(#0074BF, #9341AC);
+    
 }
 
+
+/*.page-bg{
+    background-image: url("/img/hill.jpg");
+  filter        : blur(10px);
+    -moz-filter   : blur(10px);
+    -webkit-filter: blur(10px);
+    -o-filter     : blur(10px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}*/
+
 .container{
-    font-family: system-ui, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
-    width: 965px;
-    margin-top: 143px;
-    margin-left: calc((100% - 965px) / 2);
+    font-family: system-ui, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    width: 800px;
+    top: 143px;
+    left: calc((100% - 965px) / 2);
 }
 
 .left{
-    float: left;
-    width: 392px;
+    display: inline-block;
+    width: 41%;
+    background-color: #015cda;
     background-image: url("../img/hill.jpg");
     background-repeat: no-repeat;
-    background-size: 392px 584px;
-    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
     color: white;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
 }
 
-h1{
-    display: inline-block;
-    width: 100%;
+.Sign_in_header{
     font-size: 50px;
     font-weight: lighter;
+    position: absolute;
+    line-height: 55px;
+    top: 40px;
+    left: 60px;
+    right: 30px;
     text-transform: capitalize;
-    padding: 41px 0 20px 91px;
 }
 
-.reset_password{
-    text-align: center;
-    padding-left: 15px;
-}
-
-.left>a{
+.links{
     color: white;
-    position: relative;
-    top: 380px;
-    left: 92px;
+    position:absolute;
+    bottom:20px;
+    left: 60px;
+}
+.links > a{
+    color:white;
 }
 
 .right{
     background-color:white;
-    float: left;
-    width: 573px;
+    float: right;
+    width: 59%;
     padding: 60px;
     color: #B6B6B6;
 }
@@ -62,100 +85,80 @@ h1{
 }
 
 .close_btn{
-    position: relative;
+    position: absolute;
     float:right;
-    top: -47px;
-    right: -37px;
+    top: 15px;
+    right: 15px;
     font-size: 40px;
     color: #B6B6B6;
     background-color: transparent;
     border: none;
 }
 
-from{
+form{
     display: inline-block;
     width: 100%;
 }
-form > .form-row{
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 40px;
-}
-form > .form-row:last-of-type{
-    margin-bottom: 0;
-}
-form > .form-row > label{
-    display: inline-block;
-    width: 100%;
-    font-size: 15px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    
-}
-form > .form-row > input{
-    display: inline-block;
-    width: 100%;
-    font-size: 20px;
-    line-height: 30px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-
-}
-form > .form-row > input{
-    display: inline-block;
-    width: 100%;
-}
-form > .form-row > button{
-    float: left;
-    font-size: 16px;
-    line-height: 20px;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #0065D9;
-    padding: 10px 49px;
-    border-radius: 25px;
-    border: none;
-}
-form > .form-row > span{
-    float: left;
-    padding: 5px;
-    line-height: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-form > .form-row > a{
-    float: left;
-    padding: 5px;
-    font-size:16px;
-    line-height: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color:#015cda;
-    text-transform: capitalize;
-}
-
-
-
 input::placeholder{
     font-size:16px;
 }
-.input{
+
+form > .form-row {
     color:  #B6B6B6;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+form > .form-row:last-of-type {
+    margin-bottom: 0;
+  }
+
+.input{
+    display: inline-block;
     background-color: transparent;
     border: none;
-    border-bottom: solid 1px;
-    width: 70%;
+    border-bottom: solid 2px #ccc;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    
 }
+.form_labels {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+.form_buttons{
+        float: left;
+        font-size: 16px;
+        line-height: 20px;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #0065D9;
+        padding: 10px 49px;
+        border-radius: 25px;
+        border: none;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
 
 .or{
+    float: left;
+    padding: 10px;
     margin-left: 24px;
     margin-right: 3px;
 }
 
 .sign_in_page{
+    float:left;
+    padding-top: 10px;
+    line-height: 20px;
     text-decoration: none;
     font-weight: bold;
     color: #0065D9;
