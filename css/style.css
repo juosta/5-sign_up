@@ -9,7 +9,8 @@ body * {
 body{
     /*background-image: url("../img/hill.jpg");*/
     background-image: radial-gradient(#0074BF, #9341AC);
-    
+    position: relative;
+    height: 100vh;
 }
 
 
@@ -30,10 +31,11 @@ body{
 .container{
     display: inline-block;
     font-family: system-ui, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position:relative;
     width: 800px;
-    top: 143px;
-    left: calc((100% - 965px) / 2);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .left{
