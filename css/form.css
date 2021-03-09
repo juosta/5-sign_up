@@ -1,0 +1,83 @@
+.form_labels{
+    text-transform: uppercase;
+}
+
+.close_btn{
+    position: absolute;
+    float:right;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+    color: #B6B6B6;
+    background-color: transparent;
+    border: none;
+}
+
+form{
+    display: inline-block;
+    width: 100%;
+}
+input::placeholder{
+    font-size:16px;
+}
+
+form > .form-row {
+    color:  #B6B6B6;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+form > .form-row:last-of-type {
+    margin-bottom: 0;
+  }
+
+.input{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #ccc;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+.form_labels {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+.form_buttons{
+        float: left;
+        font-size: 16px;
+        line-height: 20px;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #0065D9;
+        padding: 10px 49px;
+        border-radius: 25px;
+        border: none;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+.or{
+    float: left;
+    padding: 10px;
+    margin-left: 24px;
+    margin-right: 3px;
+}
+
+.sign_in_page{
+    float:left;
+    padding-top: 10px;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065D9;
+}
